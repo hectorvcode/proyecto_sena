@@ -1,8 +1,17 @@
+<?php
+session_start();
+if (isset($_SESSION['nombreUsuario'])) {
+    $usuarioInicio = $_SESSION['nombreUsuario'];
+} else {
+    header('location: ../loginUsuario/index.php');
+}
+?>
+
 <nav id="sidebar">
     <div class="sidebar_blog_1">
         <div class="sidebar-header">
             <div class="logo_section">
-                <a href="index.html"><img class="logo_icon img-responsive" src="../../images/logo/logo_icon.png" alt="#" /></a>
+                <a href="index.html"><img class="logo_icon img-responsive" src="../../images/logo/latinlogo.png" alt="#" /></a>
             </div>
         </div>
         <div class="sidebar_user_info">
@@ -10,7 +19,7 @@
             <div class="user_profle_side">
                 <div class="user_img"><img class="img-responsive" src="../../images/layout_img/user_img.jpg" alt="#" /></div>
                 <div class="user_info">
-                    <h6>John David</h6>
+                    <h6><?=$usuarioInicio?></h6>
                     <p><span class="online_animation"></span> Online</p>
                 </div>
             </div>
@@ -23,13 +32,11 @@
                 <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
                 <ul class="collapse list-unstyled" id="dashboard">
                     <li>
-                        <a href="../../dashboard.html">> <span>Default Dashboard</span></a>
-                    </li>
-                    <li>
-                        <a href="../../dashboard_2.html">> <span>Dashboard style 2</span></a>
+                        <a href="../loginUsuario/principal.php">> <span>Main Page</span></a>
                     </li>
                 </ul>
             </li>
+            <li><a href="#"> <i class="bi bi-people-fill"></i> <span>Employees</span></a></li>
             <li><a href="../../widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>Widgets</span></a></li>
             <li>
                 <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-diamond purple_color"></i> <span>Elements</span></a>
