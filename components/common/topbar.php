@@ -3,9 +3,11 @@ session_start();
 if (isset($_SESSION['nombreUsuario'])) {
     $usuarioInicio = $_SESSION['nombreUsuario'];
 } else {
-    header('location: ../loginUsuario/index.php');
+    header('location:index.php');
 }
 ?>
+
+
 
 
 <div class="topbar">
@@ -30,7 +32,7 @@ if (isset($_SESSION['nombreUsuario'])) {
                                 <a class="dropdown-item" href="../../profile.html">My Profile</a>
                                 <a class="dropdown-item" href="../../settings.html">Settings</a>
                                 <a class="dropdown-item" href="../../help.html">Help</a>
-                                <a class="dropdown-item" href="#"><span>Log Out</span> <i class="fa fa-sign-out"></i></a>
+                                <a class="dropdown-item" href="../common/logout.php">Cerrar Sesión</a>
                             </div>
                         </li>
                     </ul>

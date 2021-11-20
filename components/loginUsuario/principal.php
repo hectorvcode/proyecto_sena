@@ -1,6 +1,5 @@
-
-
 <?php include_once "../common/encabezado.php" ?>
+</head>
 
 <body class="dashboard dashboard_1">
 

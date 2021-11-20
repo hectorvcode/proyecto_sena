@@ -36,8 +36,19 @@ if (isset($_SESSION['nombreUsuario'])) {
                     </li>
                 </ul>
             </li>
-            <li><a href="#"> <i class="bi bi-people-fill"></i> <span>Employees</span></a></li>
+
+
+            <li>
+                <a href="#empleados" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> <i class="bi bi-people-fill"></i> <span>Employees</span></a>
+                <ul class="collapse list-unstyled" id="empleados">
+                    <li><a href="../empleados/formulario-empleados.php">> <span>Registrar Empleado</span></a></li>
+                    <li><a href="../empleados/listar-empleados.php">> <span>Lista Empleados</span></a></li>
+                </ul>
+            </li>
+
+            
             <li><a href="../../widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>Widgets</span></a></li>
+
             <li>
                 <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-diamond purple_color"></i> <span>Elements</span></a>
                 <ul class="collapse list-unstyled" id="element">
