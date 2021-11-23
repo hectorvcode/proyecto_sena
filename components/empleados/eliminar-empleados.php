@@ -11,3 +11,4 @@ if (!isset($_GET["idempleado"])) {
     $queryEliminacion->execute();
     header("location: listar-empleados.php");
 }
+?>
