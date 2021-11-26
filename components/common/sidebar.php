@@ -29,7 +29,8 @@ if (isset($_SESSION['nombreUsuario'])) {
         <h4>General</h4>
         <ul class="list-unstyled components">
             <li class="active">
-                <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
+                <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
                 <ul class="collapse list-unstyled" id="dashboard">
                     <li>
                         <a href="../loginUsuario/principal.php">> <span>Main Page</span></a>
@@ -39,7 +40,18 @@ if (isset($_SESSION['nombreUsuario'])) {
 
 
             <li>
-                <a href="#empleados" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> <i class="bi bi-people-fill"></i> <span>Employees</span></a>
+                <a href="#usuarios" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+                    <i class="bi bi-person-workspace"></i> <span>Usuarios</span></a>
+                <ul class="collapse list-unstyled" id="usuarios">
+                    <li><a href="../usuarios/formulario-usuarios.php">> <span>Registrar Usuarios</span></a></li>
+                    <li><a href="../usuarios/listar-usuarios.php">> <span>Lista Usuarios</span></a></li>
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="#empleados" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+                    <i class="bi bi-people-fill"></i> <span>Employees</span></a>
                 <ul class="collapse list-unstyled" id="empleados">
                     <li><a href="../empleados/formulario-empleados.php">> <span>Registrar Empleado</span></a></li>
                     <li><a href="../empleados/listar-empleados.php">> <span>Lista Empleados</span></a></li>
@@ -50,7 +62,8 @@ if (isset($_SESSION['nombreUsuario'])) {
             <li><a href="../../widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>Widgets</span></a></li>
 
             <li>
-                <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-diamond purple_color"></i> <span>Elements</span></a>
+                <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fa fa-diamond purple_color"></i> <span>Elements</span></a>
                 <ul class="collapse list-unstyled" id="element">
                     <li><a href="../../general_elements.html">> <span>General Elements</span></a></li>
                     <li><a href="../../media_gallery.html">> <span>Media Gallery</span></a></li>

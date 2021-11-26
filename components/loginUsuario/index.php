@@ -11,7 +11,7 @@ if (isset($_SESSION['nombreUsuario'])) {
         $resultadoQuery = $mysqli->prepare(
             "SELECT * FROM usuarios WHERE correo=? AND password=?"
         );
-        $resultadoQuery->bind_param('ss', $correo, $password);
+        $resultadoQuery->bind_param('ss', $correo, $hashedPassword);
         $resultadoQuery->execute();
         $resultadoData = $resultadoQuery->get_result();
         $infoUsuario = $resultadoData->fetch_assoc();
