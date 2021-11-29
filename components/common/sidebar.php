@@ -51,10 +51,19 @@ if (isset($_SESSION['nombreUsuario'])) {
 
             <li>
                 <a href="#empleados" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                    <i class="bi bi-people-fill"></i> <span>Employees</span></a>
+                    <i class="bi bi-people-fill"></i> <span>Empleados</span></a>
                 <ul class="collapse list-unstyled" id="empleados">
                     <li><a href="../empleados/formulario-empleados.php">> <span>Registrar Empleado</span></a></li>
                     <li><a href="../empleados/listar-empleados.php">> <span>Lista Empleados</span></a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#vehiculos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+                    <i class="bi bi-truck"></i> <span>Vehiculos</span></a>
+                <ul class="collapse list-unstyled" id="vehiculos">
+                    <li><a href="../vehiculos/formulario-vehiculos.php">> <span>Registrar Vehiculos</span></a></li>
+                    <li><a href="../vehiculos/listar-vehiculos.php">> <span>Lista Vehiculos</span></a></li>
                 </ul>
             </li>
 

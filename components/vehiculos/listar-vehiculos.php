@@ -1,12 +1,13 @@
 <?php
     $mysqli = include_once "../database/conexion.php";
-    $resultadoQuery = $mysqli->query("SELECT idusuario, correo, password, idempleado
-    FROM usuarios");
-    $listadoUsuarios = $resultadoQuery->fetch_all(MYSQLI_ASSOC);
+    $resultadoQuery = $mysqli->query("SELECT idvehiculo, placa, marca, modelo, 
+    modeloAnio, capacidad, cantidad_combustible, observaciones, idempleado
+    FROM vehiculos");
+    $listadoVehiculos = $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 ?>
 
 <?php include_once "../common/encabezado.php" ?>
-<link rel="stylesheet" href="empleados.css">
+<link rel="stylesheet" href="vehiculos.css">
 </head>
 
 <body class="inner_page media_gallery">
@@ -34,7 +35,7 @@
                         <div class="row column_title">
                             <div class="col-md-12">
                                 <div class="page_title">
-                                    <h2>Módulo Usuarios</h2>
+                                    <h2>Módulo Vehiculos</h2>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +46,7 @@
                                 <div class="white_shd full margin_bottom_30">
                                     <div class="full graph_head">
                                         <div class="heading1 margin_0">
-                                            <h2>Listar Usuarios</h2>
+                                            <h2>Listar Vehiculos</h2>
                                         </div>
                                     </div>
                                     <div class="full gallery_section_inner padding_infor_info">
@@ -64,8 +65,13 @@
                                                                 <thead>
                                                                     <tr>
                                                                         <th scope="col">Id</th>
-                                                                        <th scope="col">Correo</th>
-                                                                        <th scope="col">Password</th>
+                                                                        <th scope="col">Placa</th>
+                                                                        <th scope="col">Marca</th>
+                                                                        <th scope="col">Modelo</th>
+                                                                        <th scope="col">M Año</th>
+                                                                        <th scope="col">Capacidad</th>
+                                                                        <th scope="col">Combustible</th>
+                                                                        <th scope="col">Observaciones</th>
                                                                         <th scope="col">Id Empleado</th>
                                                                         <th scope="col">Editar</th>
                                                                         <th scope="col">Eliminar</th>
@@ -73,18 +79,23 @@
                                                                 </thead>
                                                                 <tbody>
                                                                     <?php
-                                                                    foreach ($listadoUsuarios as $listadoIndividual) {
+                                                                    foreach ($listadoVehiculos as $listadoIndividual) {
                                                                     ?>
                                                                         <tr>
-                                                                            <td><?php echo $listadoIndividual["idusuario"] ?></td>
-                                                                            <td><?php echo $listadoIndividual["correo"] ?></td>
-                                                                            <td><?php echo $listadoIndividual["password"] ?></td>
+                                                                            <td><?php echo $listadoIndividual["idvehiculo"] ?></td>
+                                                                            <td><?php echo $listadoIndividual["placa"] ?></td>
+                                                                            <td><?php echo $listadoIndividual["marca"] ?></td>
+                                                                            <td><?php echo $listadoIndividual["modelo"] ?></td>
+                                                                            <td><?php echo $listadoIndividual["modeloAnio"] ?></td>
+                                                                            <td><?php echo $listadoIndividual["capacidad"] ?></td>
+                                                                            <td><?php echo $listadoIndividual["cantidad_combustible"] ?></td>
+                                                                            <td><?php echo $listadoIndividual["observaciones"] ?></td>
                                                                             <td><?php echo $listadoIndividual["idempleado"] ?></td>
                                                                             <td>
-                                                                                <a href="editar-usuarios.php?idusuario=<?php echo $listadoIndividual["idusuario"] ?>">Editar</a>
+                                                                                <a href="editar-vehiculos.php?idvehiculo=<?php echo $listadoIndividual["idvehiculo"] ?>">Editar</a>
                                                                             </td>
                                                                             <td>
-                                                                                <a href="eliminar-usuarios.php?idusuario=<?php echo $listadoIndividual["idusuario"] ?>">Eliminar</a>
+                                                                                <a href="eliminar-vehiculos.php?idvehiculo=<?php echo $listadoIndividual["idvehiculo"] ?>">Eliminar</a>
                                                                             </td>
                                                                         </tr>
                                                                     <?php
