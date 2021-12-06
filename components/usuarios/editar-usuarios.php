@@ -45,7 +45,7 @@ if (!$infoUsuario) {
                         <div class="row column_title">
                             <div class="col-md-12">
                                 <div class="page_title">
-                                    <h2>Módulo Empleados</h2>
+                                    <h2>Módulo Usuarios</h2>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ if (!$infoUsuario) {
                                 <div class="white_shd full margin_bottom_30">
                                     <div class="full graph_head">
                                         <div class="heading1 margin_0">
-                                            <h2>Registrar Empleado</h2>
+                                            <h2>Registrar Usuario</h2>
                                         </div>
                                     </div>
                                     <div class="full gallery_section_inner padding_infor_info">
