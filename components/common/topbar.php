@@ -1,11 +1,11 @@
-<?php
+<!-- <?php
 session_start();
 if (isset($_SESSION['nombreUsuario'])) {
     $usuarioInicio = $_SESSION['nombreUsuario'];
 } else {
     header('location:index.php');
 }
-?>
+?> -->
 
 
 
@@ -14,10 +14,10 @@ if (isset($_SESSION['nombreUsuario'])) {
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="full">
             <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i class="fa fa-bars"></i></button>
-            <div class="logo_section">
-                <a href="../loginUsuario/index.php"><img class="img-responsive" src="../../images/logo/latincoLogo.png" alt="#" /></a>
-            </div>
-            <div class="right_topbar">
+                <div class="logo_section" style="width:80%; margin: 0 auto;">
+                    <a href="../loginUsuario/index.php"><img class="img-responsive" src="../../images/logo/latincoLogo.png" alt="#" /></a>
+                </div>
+            <!-- <div class="right_topbar">
                 <div class="icon_info">
                     <ul>
                         <li><a href="#"><i class="fa fa-bell-o"></i><span class="badge">2</span></a></li>
@@ -37,7 +37,7 @@ if (isset($_SESSION['nombreUsuario'])) {
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </nav>
 </div>
