@@ -4,7 +4,7 @@ if (!isset($_GET["idvehiculo"])) {
     exit("no se tiene un id");
 } else {
     $id_vehiculo = $_GET["idvehiculo"];
-    $queryEliminacion = $mysqli->prepare("DELETE FROM usuarios
+    $queryEliminacion = $mysqli->prepare("DELETE FROM vehiculos
         WHERE 
             idvehiculo = ?");
     $queryEliminacion->bind_param("i", $id_vehiculo);
