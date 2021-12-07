@@ -1,14 +1,14 @@
 <?php
 $mysqli = include_once "../database/conexion.php";
-if (!isset($_GET["idusuario"])) {
+if (!isset($_GET["idvehiculo"])) {
     exit("no se tiene un id");
 } else {
-    $id_usuario = $_GET["idusuario"];
+    $id_vehiculo = $_GET["idvehiculo"];
     $queryEliminacion = $mysqli->prepare("DELETE FROM usuarios
         WHERE 
-            idusuario = ?");
-    $queryEliminacion->bind_param("i", $id_usuario);
+            idvehiculo = ?");
+    $queryEliminacion->bind_param("i", $id_vehiculo);
     $queryEliminacion->execute();
-    header("location: listar-usuarios.php");
+    header("location: listar-vehiculos.php");
 }
 ?>
