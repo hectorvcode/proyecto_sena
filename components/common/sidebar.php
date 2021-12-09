@@ -67,6 +67,15 @@ if (isset($_SESSION['nombreUsuario'])) {
                 </ul>
             </li>
 
+            <li>
+                <a href="#produccion" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+                    <i class="bi bi-building"></i> <span>Producción</span></a>
+                <ul class="collapse list-unstyled" id="produccion">
+                    <li><a href="../produccion/formulario-produccion.php">> <span>Registrar Producción</span></a></li>
+                    <li><a href="../produccion/listar-produccion.php">> <span>Lista Producción</span></a></li>
+                </ul>
+            </li>
+
             
             <li><a href="../../widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>Widgets</span></a></li>
 

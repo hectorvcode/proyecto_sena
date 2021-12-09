@@ -10,7 +10,9 @@
     $observations = $_POST["observaciones"];
     $queryInsercion=$mysqli->prepare(
         "INSERT INTO empleados
-        (tipo_documento,numero_documento, nombres, apellidos, fecha_nacimiento, genero, ciudad_residencia, observaciones)
+        (tipo_documento,numero_documento, nombres, 
+        apellidos, fecha_nacimiento, genero, ciudad_residencia, 
+        observaciones)
         VALUES
         (?,?,?,?,?,?,?,?)");
     $queryInsercion->bind_param("sissssss",$documentType,$documentNumber,$name,$lastName,$birthDate,$genre,$city,$observations); //mysql prepared 41:29
