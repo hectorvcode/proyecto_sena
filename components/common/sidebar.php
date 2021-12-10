@@ -85,7 +85,15 @@ if (isset($_SESSION['nombreUsuario'])) {
                 </ul>
             </li>
 
-            
+            <li>
+                <a href="#almacen" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+                    <i class="bi bi-building"></i> <span>Almacén</span></a>
+                <ul class="collapse list-unstyled" id="almacen">
+                    <li><a href="../almacen/formulario-almacen.php">> <span>Registrar Almacén</span></a></li>
+                    <li><a href="../almacen/listar-almacen.php">> <span>Lista Almacén</span></a></li>
+                </ul>
+            </li>
+
             <li><a href="../../widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>Widgets</span></a></li>
 
             <li>
