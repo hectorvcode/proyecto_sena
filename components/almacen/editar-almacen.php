@@ -1,17 +1,17 @@
 <?php
 $mysqli = include_once "../database/conexion.php";
-$id_usuario = $_GET["idusuario"];
+$id_almacen = $_GET["idalmacen"];
 $resultadoQuery = $mysqli->prepare("SELECT 
-    idusuario, 
-    correo, 
-    password, 
-    idempleado
-FROM usuarios WHERE idusuario=?");
-$resultadoQuery->bind_param("i", $id_usuario);
+    idalmacen, 
+    nombreAlmacen, 
+    ubicacion, 
+    observaciones
+FROM almacen WHERE idalmacen=?");
+$resultadoQuery->bind_param("i", $id_almacen);
 $resultadoQuery->execute();
 $resultadoData = $resultadoQuery->get_result();
-$infoUsuario = $resultadoData->fetch_assoc();
-if (!$infoUsuario) {
+$infoAlmacen = $resultadoData->fetch_assoc();
+if (!$infoAlmacen) {
     exit("No existe información para el id que se envió");
 }
 ?>
@@ -45,7 +45,7 @@ if (!$infoUsuario) {
                         <div class="row column_title">
                             <div class="col-md-12">
                                 <div class="page_title">
-                                    <h2>Módulo Usuarios</h2>
+                                    <h2>Módulo Almacén</h2>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ if (!$infoUsuario) {
                                 <div class="white_shd full margin_bottom_30">
                                     <div class="full graph_head">
                                         <div class="heading1 margin_0">
-                                            <h2>Registrar Usuario</h2>
+                                            <h2>Registrar Almacén</h2>
                                         </div>
                                     </div>
                                     <div class="full gallery_section_inner padding_infor_info">
@@ -70,21 +70,20 @@ if (!$infoUsuario) {
                                                     <div class="row">
                                                         <div class="col-12 contenedor">
 
-                                                            <form class="main-form" action="actualizar-usuarios.php" method="POST">
+                                                            <form class="main-form" action="actualizar-almacen.php" method="POST">
 
-                                                                <input type="hidden" name="id" id="id" value="<?php echo $id_usuario ?>">
-
+                                                                <input type="hidden" name="id" id="id" value="<?php echo $id_almacen ?>">
                                                                 <div class="mb-3">
-                                                                    <label for="email" class="form-label">Email del usuario</label>
-                                                                    <input value="<?php echo $infoUsuario["correo"] ?>" required type="email" class="form-control" name="email" id="email" placeholder="nombre@ejemplo.com">
+                                                                    <label for="nombreAlmacen" class="form-label">Nombre Almacén</label>
+                                                                    <input value="<?php echo $infoAlmacen["nombreAlmacen"] ?>" type="text" class="form-control" name="nombreAlmacen" id="nombreAlmacen">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="passw" class="form-label">Contraseña</label>
-                                                                    <input value="<?php echo $infoUsuario["password"] ?>" required type="password" class="form-control" name="passw" id="passw">
+                                                                    <label for="ubicacion" class="form-label">Ubicación</label>
+                                                                    <input value="<?php echo $infoAlmacen["ubicacion"] ?>" type="text" class="form-control" name="ubicacion" id="ubicacion">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="idEmpleado" class="form-label">Id Empleado</label>
-                                                                    <input value="<?php echo $infoUsuario["idempleado"] ?>" required type="number" class="form-control" name="idEmpleado" id="idEmpleado" placeholder="Id Empleado (tabla)">
+                                                                    <label for="observaciones" class="form-label">Observaciones</label>
+                                                                    <input value="<?php echo $infoAlmacen["observaciones"] ?>" required type="text" class="form-control" name="observaciones" id="observaciones">
                                                                 </div>
                                                                 <div class="mb3">
                                                                     <button class="btn btn-success">Guardar</button>
