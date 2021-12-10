@@ -76,6 +76,15 @@ if (isset($_SESSION['nombreUsuario'])) {
                 </ul>
             </li>
 
+            <li>
+                <a href="#inventario" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+                    <i class="bi bi-building"></i> <span>Inventario</span></a>
+                <ul class="collapse list-unstyled" id="inventario">
+                    <li><a href="../inventario/formulario-inventario.php">> <span>Registrar Inventario</span></a></li>
+                    <li><a href="../inventario/listar-inventario.php">> <span>Lista Inventario</span></a></li>
+                </ul>
+            </li>
+
             
             <li><a href="../../widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>Widgets</span></a></li>
 
