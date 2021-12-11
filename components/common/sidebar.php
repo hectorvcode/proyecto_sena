@@ -94,6 +94,15 @@ if (isset($_SESSION['nombreUsuario'])) {
                 </ul>
             </li>
 
+            <li>
+                <a href="#proyecto" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+                    <i class="bi bi-building"></i> <span>Proyecto</span></a>
+                <ul class="collapse list-unstyled" id="proyecto">
+                    <li><a href="../proyecto/formulario-proyecto.php">> <span>Registrar Proyecto</span></a></li>
+                    <li><a href="../proyecto/listar-proyecto.php">> <span>Lista Proyecto</span></a></li>
+                </ul>
+            </li>
+
             <li><a href="../../widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>Widgets</span></a></li>
 
             <li>
