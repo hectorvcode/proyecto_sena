@@ -103,7 +103,7 @@ if (!$infoDespacho) {
                                                                 </div>
                                                                 <div class="mb3">
                                                                     <button class="btn btn-success">Guardar</button>
-                                                                    <a class="btn btn-info" href="../loginUsuario/pagina_principal.php">Retornar</a>
+                                                                    <a class="btn btn-info" href="../loginUsuario/principal.php">Retornar</a>
                                                                 </div>
 
                                                             </form>
