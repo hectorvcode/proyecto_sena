@@ -60,7 +60,7 @@ if (isset($_SESSION['nombreUsuario'])) {
 
             <li>
                 <a href="#vehiculos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                    <i class="bi bi-truck"></i> <span>Vehiculos</span></a>
+                    <i class="bi bi-truck purple_color2"></i> <span>Vehiculos</span></a>
                 <ul class="collapse list-unstyled" id="vehiculos">
                     <li><a href="../vehiculos/formulario-vehiculos.php">> <span>Registrar Vehiculos</span></a></li>
                     <li><a href="../vehiculos/listar-vehiculos.php">> <span>Lista Vehiculos</span></a></li>
@@ -69,7 +69,7 @@ if (isset($_SESSION['nombreUsuario'])) {
 
             <li>
                 <a href="#produccion" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                    <i class="bi bi-building"></i> <span>Producción</span></a>
+                    <i class="bi bi-building blue2_color"></i> <span>Producción</span></a>
                 <ul class="collapse list-unstyled" id="produccion">
                     <li><a href="../produccion/formulario-produccion.php">> <span>Registrar Producción</span></a></li>
                     <li><a href="../produccion/listar-produccion.php">> <span>Lista Producción</span></a></li>
@@ -78,7 +78,7 @@ if (isset($_SESSION['nombreUsuario'])) {
 
             <li>
                 <a href="#inventario" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                    <i class="bi bi-building"></i> <span>Inventario</span></a>
+                    <i class="bi bi-minecart-loaded red_color"></i> <span>Inventario</span></a>
                 <ul class="collapse list-unstyled" id="inventario">
                     <li><a href="../inventario/formulario-inventario.php">> <span>Registrar Inventario</span></a></li>
                     <li><a href="../inventario/listar-inventario.php">> <span>Lista Inventario</span></a></li>
@@ -87,7 +87,7 @@ if (isset($_SESSION['nombreUsuario'])) {
 
             <li>
                 <a href="#almacen" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                    <i class="bi bi-building"></i> <span>Almacén</span></a>
+                    <i class="bi bi-shop-window yellow_color"></i> <span>Almacén</span></a>
                 <ul class="collapse list-unstyled" id="almacen">
                     <li><a href="../almacen/formulario-almacen.php">> <span>Registrar Almacén</span></a></li>
                     <li><a href="../almacen/listar-almacen.php">> <span>Lista Almacén</span></a></li>
@@ -96,7 +96,7 @@ if (isset($_SESSION['nombreUsuario'])) {
 
             <li>
                 <a href="#proyecto" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                    <i class="bi bi-building"></i> <span>Proyecto</span></a>
+                    <i class="bi bi-clipboard-data green_color"></i> <span>Proyecto</span></a>
                 <ul class="collapse list-unstyled" id="proyecto">
                     <li><a href="../proyecto/formulario-proyecto.php">> <span>Registrar Proyecto</span></a></li>
                     <li><a href="../proyecto/listar-proyecto.php">> <span>Lista Proyecto</span></a></li>
@@ -105,59 +105,22 @@ if (isset($_SESSION['nombreUsuario'])) {
 
             <li>
                 <a href="#despacho" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                    <i class="bi bi-building"></i> <span>Despacho</span></a>
+                    <i class="bi bi-basket2"></i> <span>Despacho</span></a>
                 <ul class="collapse list-unstyled" id="despacho">
                     <li><a href="../despachos/formulario-despacho.php">> <span>Registrar Despachos</span></a></li>
                     <li><a href="../despachos/listar-despacho.php">> <span>Lista Despachos</span></a></li>
                 </ul>
             </li>
 
-            <li><a href="../../widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>Widgets</span></a></li>
+            <li>
+                <a href="#logout" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+                    <i class="fa fa-cog yellow_color"></i> <span>Settings</span></a>
+                <ul class="collapse list-unstyled" id="logout">
+                    <li><a href="../despachos/formulario-despacho.php">> <span>Log Out</span></a></li>
+                    <li><a href="../despachos/listar-despacho.php">> <span>Lista Despachos</span></a></li>
+                </ul>
+            </li>
 
-            <li>
-                <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                    <i class="fa fa-diamond purple_color"></i> <span>Elements</span></a>
-                <ul class="collapse list-unstyled" id="element">
-                    <li><a href="../../general_elements.html">> <span>General Elements</span></a></li>
-                    <li><a href="../../media_gallery.html">> <span>Media Gallery</span></a></li>
-                    <li><a href="../../icons.html">> <span>Icons</span></a></li>
-                    <li><a href="../../invoice.html">> <span>Invoice</span></a></li>
-                </ul>
-            </li>
-            <li><a href="../../tables.html"><i class="fa fa-table purple_color2"></i> <span>Tables</span></a></li>
-            <li>
-                <a href="#apps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-object-group blue2_color"></i> <span>Apps</span></a>
-                <ul class="collapse list-unstyled" id="apps">
-                    <li><a href="../../email.html">> <span>Email</span></a></li>
-                    <li><a href="../../calendar.html">> <span>Calendar</span></a></li>
-                    <li><a href="../../media_gallery.html">> <span>Media Gallery</span></a></li>
-                </ul>
-            </li>
-            <li><a href="../../price.html"><i class="fa fa-briefcase blue1_color"></i> <span>Pricing Tables</span></a></li>
-            <li>
-                <a href="../../contact.html">
-                    <i class="fa fa-paper-plane red_color"></i> <span>Contact</span></a>
-            </li>
-            <li class="active">
-                <a href="#additional_page" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-clone yellow_color"></i> <span>Additional Pages</span></a>
-                <ul class="collapse list-unstyled" id="additional_page">
-                    <li>
-                        <a href="../../profile.html">> <span>Profile</span></a>
-                    </li>
-                    <li>
-                        <a href="../../project.html">> <span>Projects</span></a>
-                    </li>
-                    <li>
-                        <a href="../../login.html">> <span>Login</span></a>
-                    </li>
-                    <li>
-                        <a href="../../404_error.html">> <span>404 Error</span></a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="../../map.html"><i class="fa fa-map purple_color2"></i> <span>Map</span></a></li>
-            <li><a href="../../charts.html"><i class="fa fa-bar-chart-o green_color"></i> <span>Charts</span></a></li>
-            <li><a href="../../settings.html"><i class="fa fa-cog yellow_color"></i> <span>Settings</span></a></li>
         </ul>
     </div>
 </nav>
