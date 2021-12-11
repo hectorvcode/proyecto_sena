@@ -103,6 +103,15 @@ if (isset($_SESSION['nombreUsuario'])) {
                 </ul>
             </li>
 
+            <li>
+                <a href="#despacho" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+                    <i class="bi bi-building"></i> <span>Despacho</span></a>
+                <ul class="collapse list-unstyled" id="despacho">
+                    <li><a href="../despachos/formulario-despacho.php">> <span>Registrar Despachos</span></a></li>
+                    <li><a href="../despachos/listar-despacho.php">> <span>Lista Despachos</span></a></li>
+                </ul>
+            </li>
+
             <li><a href="../../widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>Widgets</span></a></li>
 
             <li>
