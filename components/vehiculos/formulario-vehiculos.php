@@ -1,5 +1,5 @@
 <?php include_once "../common/encabezado.php" ?>
-<link rel="stylesheet" href="vehiculos.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="inner_page media_gallery">

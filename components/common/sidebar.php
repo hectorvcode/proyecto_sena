@@ -98,8 +98,8 @@ if (isset($_SESSION['nombreUsuario'])) {
                 <a href="#proyecto" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
                     <i class="bi bi-clipboard-data green_color"></i> <span>Proyecto</span></a>
                 <ul class="collapse list-unstyled" id="proyecto">
-                    <li><a href="../proyecto/formulario-proyecto.php">> <span>Registrar Proyecto</span></a></li>
-                    <li><a href="../proyecto/listar-proyecto.php">> <span>Lista Proyecto</span></a></li>
+                    <li><a href="../proyectos/formulario-proyecto.php"> <span>Registrar Proyecto</span></a></li>
+                    <li><a href="../proyectos/listar-proyecto.php"> <span>Lista Proyecto</span></a></li>
                 </ul>
             </li>
 
@@ -113,12 +113,8 @@ if (isset($_SESSION['nombreUsuario'])) {
             </li>
 
             <li>
-                <a href="#logout" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                    <i class="fa fa-cog yellow_color"></i> <span>Settings</span></a>
-                <ul class="collapse list-unstyled" id="logout">
-                    <li><a href="../despachos/formulario-despacho.php">> <span>Log Out</span></a></li>
-                    <li><a href="../despachos/listar-despacho.php">> <span>Lista Despachos</span></a></li>
-                </ul>
+                <a href="../../logout.php" aria-expanded="false"> 
+                    <i class="fa fa-cog yellow_color"></i> <span>Logout</span></a>
             </li>
 
         </ul>
