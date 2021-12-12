@@ -22,7 +22,7 @@ if (!$infoProyecto) {
 ?>
 
 <?php include_once "../common/encabezado.php" ?>
-<link rel="stylesheet" href="usuarios.css">
+<link rel="stylesheet" href="../../css/estilos.css">
 </head>
 
 <body class="inner_page media_gallery">
