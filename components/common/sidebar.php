@@ -113,12 +113,8 @@ if (isset($_SESSION['nombreUsuario'])) {
             </li>
 
             <li>
-                <a href="#logout" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-                    <i class="fa fa-cog yellow_color"></i> <span>Settings</span></a>
-                <ul class="collapse list-unstyled" id="logout">
-                    <li><a href="../despachos/formulario-despacho.php">> <span>Log Out</span></a></li>
-                    <li><a href="../despachos/listar-despacho.php">> <span>Lista Despachos</span></a></li>
-                </ul>
+                <a href="../../logout.php" aria-expanded="false"> 
+                    <i class="bi bi-door-closed-fill yellow_color"></i> <span>LogOut</span></a>
             </li>
 
         </ul>
