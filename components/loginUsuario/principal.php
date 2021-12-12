@@ -1,8 +1,8 @@
 <?php include_once "../common/encabezado.php" ?>
+<link rel="stylesheet" href="../../css/estilos.css">
 </head>
 
-<body class="dashboard dashboard_1">
-
+<body class="inner_page media_gallery">
     <div class="full_container">
         <div class="inner_container">
 
@@ -17,65 +17,79 @@
                 <?php include_once "../common/topbar.php" ?>
                 <!-- end topbar -->
 
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-md-6 col-xl-7 mb-lg-0 py-5 py-md-6">
-                            <div class="lc-block mb-3 mb-md-5 lh-1">
-                                <div editable="rich">
-                                    <h1 class="rfs-30 text-primary">Desarrollo de Infraestructura</h1>
+                <!-- dashboard inner -->
+                <div class="midde_cont">
+                    <div class="container-fluid">
+                        <div class="row column_title">
+                            <div class="col-md-12">
+                                <div class="page_title">
+                                    <h2>Proyectos de Infraestructura</h2>
                                 </div>
-                            </div><!-- /lc-block -->
-                            <div class="lc-block">
-                                <a class="btn btn-lg btn-dark" href="#" role="button">Ir a Modulos</a>
-                            </div><!-- /lc-block -->
-                        </div><!-- /col -->
-                        <div class="col-12 col-md-6 col-xl-5">
-                            <div class="lc-block px-md-4 px-lg-5 lh-lg">
-                                <div editable="rich">
-                                    <p class="rfs-7"> El centro de nuestra operación es el desarrollo de infraestructura en su 
-                                        ciclo completo: Promovemos, diseñamos y construimos proyectos; prestamos servicios 
-                                        especializados y realizamos inversiones en obras de infraestructura y en el sector 
-                                        energético.
-                                    </p>
-                                </div>
-                            </div><!-- /lc-block -->
-                        </div><!-- /col -->
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 g-0">
-                            <div class="lc-block">
-                                <a href="../loginUsuario/principal.php">
-                                    <img class="img-fluid w-100" src="../../images/landing_page/quienesomos.jpg" style="object-fit:cover; max-height:45vh">
-                                </a>
-                            </div><!-- /lc-block -->
-                        </div><!-- /col -->
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-12 d-flex justify-content-center align-items-baseline">
-                            <div class="lc-block py-4 me-3">
-                                <div editable="rich">
-                                    <h4 class="fw-bolder">1994</h4>
-                                </div>
-                            </div><!-- /lc-block -->
-                            <div class="lc-block py-4">
+                            </div>
+                        </div>
+                        <!-- row -->
+                        <div class="row column4 graph">
+                            <!-- Gallery section -->
+                            <div class="col-md-12">
+                                <div class="white_shd full margin_bottom_30">
+                                    <div class="full gallery_section_inner padding_infor_info">
+                                        <div class="row">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="2em" height="2em" viewBox="0 0 24 24"  lc-helper="svg-icon" fill="currentColor">
-                                    <path d="M23,12L19,16V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9C5.31,9 6.42,9.83 6.83,11H19V8L23,12Z"></path>
-                                </svg>
-
-                            </div><!-- /lc-block -->
-                            <div class="lc-block py-4 ms-3">
-                                <div editable="rich">
-                                    <h4 class="fw-bolder"> 2021</h4>
+                                            <div id="carouselExampleIndicators" class="carousel slide"
+                                                data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                                                        class="active"></li>
+                                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="d-block w-100" src="https://images.squarespace-cdn.com/content/v1/55c9fbefe4b006a4456b07d1/1454947923755-J8LM0KMPMOGTIPD8AR6D/DJI_0231.JPG" alt="First slide">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100" src="https://images.squarespace-cdn.com/content/v1/55c9fbefe4b006a4456b07d1/1454947935992-R2TZ3VI2IQ3HASX2QBHF/DJI_0239.JPG" alt="Second slide">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100" src="https://images.squarespace-cdn.com/content/v1/55c9fbefe4b006a4456b07d1/1454947079637-9UMZ7II5U4MR79NRNRU5/DSC_0017.jpg" alt="Third slide">
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carouselExampleIndicators"
+                                                    role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleIndicators"
+                                                    role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                            <!-- <div class="container mt-5 mb-5 d-flex justify-content-center">
+                                                <div class="card px-1 py-4">
+                                                    <div class="row">
+                                                        <div class="col-12 contenedor">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
                                 </div>
-                            </div><!-- /lc-block -->
-                        </div><!-- /col -->
+                            </div>
+                        </div>
+                        <!-- footer -->
+                        <?php include_once "../common/pie.php" ?>
                     </div>
+                    <!-- end dashboard inner -->
                 </div>
             </div>
+            <!-- model popup -->
+            <!-- The Modal -->
+            <?php include_once "../common/modal.php" ?>
+            <!-- end model popup -->
         </div>
     </div>
     <?php include_once "../common/script.php" ?>
 </body>
-
-</html>
