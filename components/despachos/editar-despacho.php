@@ -78,29 +78,30 @@ if (!$infoDespacho) {
                                                                 <input type="hidden" name="id" id="id" value="<?php echo $id_despacho ?>">
 
                                                                 <div class="mb-3">
-                                                                    <label for="idItem" class="form-label">Id Item</label>
+                                                                    <label for="idItem" class="form-label">Id Item *</label>
                                                                     <input value="<?php echo $infoDespacho["iditem"] ?>" type="number" class="form-control" name="idItem" id="idItem">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="cantidadItem" class="form-label">Cantidad Item</label>
+                                                                    <label for="cantidadItem" class="form-label">Cantidad Item *</label>
                                                                     <input value="<?php echo $infoDespacho["cantidad_item"] ?>" type="number" class="form-control" name="cantidadItem" id="cantidadItem">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="fechaDespacho" class="form-label">Fecha Despacho</label>
+                                                                    <label for="fechaDespacho" class="form-label">Fecha Despacho *</label>
                                                                     <input value="<?php echo $infoDespacho["fecha_despacho"] ?>" required type="date" class="form-control" name="fechaDespacho" id="fechaDespacho">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="idVehiculo" class="form-label">Id Vehiculo</label>
+                                                                    <label for="idVehiculo" class="form-label">Id Vehiculo *</label>
                                                                     <input value="<?php echo $infoDespacho["idvehiculo"] ?>" type="number" class="form-control" name="idVehiculo" id="idVehiculo">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="idProyecto" class="form-label">Id Proyecto</label>
+                                                                    <label for="idProyecto" class="form-label">Id Proyecto *</label>
                                                                     <input value="<?php echo $infoDespacho["idproyecto"] ?>" type="number" class="form-control" name="idProyecto" id="idProyecto">
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label for="observaciones" class="form-label">Observaciones</label>
                                                                     <input value="<?php echo $infoDespacho["observaciones"] ?>" type="text" class="form-control" name="observaciones" id="observaciones">
                                                                 </div>
+                                                                <small>Los campos con * son requeridos</small>
                                                                 <div class="mb3">
                                                                     <button class="btn btn-success">Guardar</button>
                                                                     <a class="btn btn-info" href="../loginUsuario/pagina_principal.php">Retornar</a>

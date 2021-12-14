@@ -74,22 +74,22 @@ if (!$infoAlmacen) {
 
                                                                 <input type="hidden" name="id" id="id" value="<?php echo $id_almacen ?>">
                                                                 <div class="mb-3">
-                                                                    <label for="nombreAlmacen" class="form-label">Nombre Almacén</label>
+                                                                    <label for="nombreAlmacen" class="form-label">Nombre Almacén *</label>
                                                                     <input value="<?php echo $infoAlmacen["nombreAlmacen"] ?>" type="text" class="form-control" name="nombreAlmacen" id="nombreAlmacen">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="ubicacion" class="form-label">Ubicación</label>
+                                                                    <label for="ubicacion" class="form-label">Ubicación *</label>
                                                                     <input value="<?php echo $infoAlmacen["ubicacion"] ?>" type="text" class="form-control" name="ubicacion" id="ubicacion">
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label for="observaciones" class="form-label">Observaciones</label>
                                                                     <input value="<?php echo $infoAlmacen["observaciones"] ?>" required type="text" class="form-control" name="observaciones" id="observaciones">
                                                                 </div>
+                                                                <small>Los campos con * son requeridos</small>
                                                                 <div class="mb3">
                                                                     <button class="btn btn-success">Guardar</button>
                                                                     <a class="btn btn-info" href="../loginUsuario/pagina_principal.php">Retornar</a>
                                                                 </div>
-
                                                             </form>
                                                         </div>
                                                     </div>

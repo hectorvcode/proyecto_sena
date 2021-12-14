@@ -80,37 +80,38 @@ if (!$infoVehiculo) {
                                                                 <input type="hidden" name="id" id="id" value="<?php echo $id_vehiculo ?>">
 
                                                                 <div class="mb-3">
-                                                                    <label for="placa" class="form-label">Placa*</label>
+                                                                    <label for="placa" class="form-label">Placa *</label>
                                                                     <input value="<?php echo $infoVehiculo["placa"] ?>" required type="text" class="form-control" name="placa" id="placa" placeholder="Número de placa">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="marca" class="form-label">Marca*</label>
+                                                                    <label for="marca" class="form-label">Marca *</label>
                                                                     <input value="<?php echo $infoVehiculo["marca"] ?>" required type="text" class="form-control" name="marca" id="marca" placeholder="Marca de vehiculo">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="modelo" class="form-label">Modelo*</label>
+                                                                    <label for="modelo" class="form-label">Modelo *</label>
                                                                     <input value="<?php echo $infoVehiculo["modelo"] ?>" required type="text" class="form-control" name="modelo" id="modelo" placeholder="Modelo de vehiculo">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="modeloAnio" class="form-label">Modelo Año*</label>
+                                                                    <label for="modeloAnio" class="form-label">Modelo Año *</label>
                                                                     <input value="<?php echo $infoVehiculo["modeloAnio"] ?>" required type="number" class="form-control" name="modeloAnio" id="modeloAnio" placeholder="Año de vehiculo">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="capacidad" class="form-label">Capacidad*</label>
+                                                                    <label for="capacidad" class="form-label">Capacidad *</label>
                                                                     <input value="<?php echo $infoVehiculo["capacidad"] ?>" required type="number" class="form-control" name="capacidad" id="capacidad" placeholder="Capacidad carga de vehiculo">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="cantidadCombustible" class="form-label">Cantidad Combustible*</label>
+                                                                    <label for="cantidadCombustible" class="form-label">Cantidad Combustible *</label>
                                                                     <input value="<?php echo $infoVehiculo["cantidad_combustible"] ?>" required type="number" class="form-control" name="cantidadCombustible" id="cantidadCombustible" placeholder="Cantidad combustible suministrado">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="idEmpleado" class="form-label">Id Empleado*</label>
+                                                                    <label for="idEmpleado" class="form-label">Id Empleado *</label>
                                                                     <input value="<?php echo $infoVehiculo["idempleado"] ?>" required type="number" class="form-control" name="idEmpleado" id="idEmpleado" placeholder="Id Empleado (tabla)">
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label for="observaciones" class="form-label">Observaciones</label>
-                                                                    <textarea value="<?php echo $infoVehiculo["observaciones"] ?>" class="form-control" id="observaciones" name="observaciones" rows="3"></textarea>
+                                                                    <input value="<?php echo $infoVehiculo["observaciones"] ?>" required type="text" class="form-control" name="observaciones" id="observaciones">
                                                                 </div>
+                                                                <small>Los campos con * son requeridos</small>
                                                                 <div class="mb3">
                                                                     <button class="btn btn-success">Guardar</button>
                                                                     <a class="btn btn-info" href="../loginUsuario/principal.php">Retornar</a>

@@ -54,77 +54,77 @@
                                                             <form class="main-form" action="registrar-produccion.php" method="POST">
 
                                                                 <div class="mb-3">
-                                                                    <label for="codigoRegistro" class="form-label">Código Registro</label>
+                                                                    <label for="codigoRegistro" class="form-label">Código Registro *</label>
                                                                     <input required type="text" class="form-control" name="codigoRegistro" id="codigoRegistro" placeholder="código registro interno">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="fecha" class="form-label">Fecha</label>
+                                                                    <label for="fecha" class="form-label">Fecha *</label>
                                                                     <input required type="date" class="form-control" name="fecha" id="fecha">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="horaInicio" class="form-label">Hora Inicio</label>
+                                                                    <label for="horaInicio" class="form-label">Hora Inicio *</label>
                                                                     <input required type="time" class="form-control" name="horaInicio" id="horaInicio">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="horaFin" class="form-label">Hora Finalización</label>
+                                                                    <label for="horaFin" class="form-label">Hora Finalización *</label>
                                                                     <input required type="time" class="form-control" name="horaFin" id="horaFin">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="cantidadAprobada" class="form-label">Cantidad Aprobada</label>
+                                                                    <label for="cantidadAprobada" class="form-label">Cantidad Aprobada *</label>
                                                                     <input type="number" class="form-control" name="cantidadAprobada" id="cantidadAprobada">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="cantidadRechazada" class="form-label">Cantidad Rechazada</label>
+                                                                    <label for="cantidadRechazada" class="form-label">Cantidad Rechazada *</label>
                                                                     <input type="number" class="form-control" name="cantidadRechazada" id="cantidadRechazada">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="temperaturaInicial" class="form-label">Temperatura Inicial</label>
+                                                                    <label for="temperaturaInicial" class="form-label">Temperatura Inicial *</label>
                                                                     <input required type="number" class="form-control" name="temperaturaInicial" id="temperaturaInicial">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="temperaturaFinal" class="form-label">Temperatura Final</label>
+                                                                    <label for="temperaturaFinal" class="form-label">Temperatura Final *</label>
                                                                     <input required type="number" class="form-control" name="temperaturaFinal" id="temperaturaFinal">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="cantidadInicialAcpm" class="form-label">Cantidad Inicial ACPM</label>
+                                                                    <label for="cantidadInicialAcpm" class="form-label">Cantidad Inicial ACPM *</label>
                                                                     <input required type="number" class="form-control" name="cantidadInicialAcpm" id="cantidadInicialAcpm">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="cantidadFinalAcpm" class="form-label">Cantidad Final ACPM</label>
+                                                                    <label for="cantidadFinalAcpm" class="form-label">Cantidad Final ACPM *</label>
                                                                     <input required type="number" class="form-control" name="cantidadFinalAcpm" id="cantidadFinalAcpm">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="cantidadInicialAsfalto" class="form-label">Cantidad Inicial Asfalto</label>
+                                                                    <label for="cantidadInicialAsfalto" class="form-label">Cantidad Inicial Asfalto *</label>
                                                                     <input required type="number" class="form-control" name="cantidadInicialAsfalto" id="cantidadInicialAsfalto">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="cantidadFinalAsfalto" class="form-label">Cantidad Final Asfalto</label>
+                                                                    <label for="cantidadFinalAsfalto" class="form-label">Cantidad Final Asfalto *</label>
                                                                     <input required type="number" class="form-control" name="cantidadFinalAsfalto" id="cantidadFinalAsfalto">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="cantidadInicialEmulsion" class="form-label">Cantidad Inicial Emulsion</label>
+                                                                    <label for="cantidadInicialEmulsion" class="form-label">Cantidad Inicial Emulsion *</label>
                                                                     <input required type="number" class="form-control" name="cantidadInicialEmulsion" id="cantidadInicialEmulsion">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="cantidadFinalEmulsion" class="form-label">Cantidad Final Emulsion</label>
+                                                                    <label for="cantidadFinalEmulsion" class="form-label">Cantidad Final Emulsion *</label>
                                                                     <input required type="number" class="form-control" name="cantidadFinalEmulsion" id="cantidadFinalEmulsion">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="idEmpleado" class="form-label">ID Empleado</label>
+                                                                    <label for="idEmpleado" class="form-label">ID Empleado *</label>
                                                                     <input required type="number" class="form-control" name="idEmpleado" id="idEmpleado">
                                                                 </div>
 
@@ -132,7 +132,7 @@
                                                                     <label for="observaciones" class="form-label">Observaciones</label>
                                                                     <input type="text" class="form-control" id="observaciones" name="observaciones">
                                                                 </div>
-
+                                                                <small>Los campos con * son requeridos</small>
                                                                 <div class="mb3">
                                                                     <button class="btn btn-success">Guardar</button>
                                                                     <a class="btn btn-info" href="../loginUsuario/principal.php">Retornar</a>

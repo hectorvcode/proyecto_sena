@@ -83,35 +83,35 @@ if (!$infoInventario) {
                                                                 <input type="hidden" name="id" id="id" value="<?php echo $id_item ?>">
 
                                                                 <div class="mb-3">
-                                                                    <label for="codigoItem" class="form-label">Código Item</label>
+                                                                    <label for="codigoItem" class="form-label">Código Item *</label>
                                                                     <input value="<?php echo $infoInventario["codigo_item"] ?>" type="text" class="form-control" name="codigoItem" id="codigoItem">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="descripcion" class="form-label">Descripción</label>
+                                                                    <label for="descripcion" class="form-label">Descripción *</label>
                                                                     <input value="<?php echo $infoInventario["descripcion"] ?>" type="text" class="form-control" name="descripcion" id="descripcion">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="precio" class="form-label">Precio</label>
+                                                                    <label for="precio" class="form-label">Precio *</label>
                                                                     <input value="<?php echo $infoInventario["precio"] ?>" required type="number" class="form-control" name="precio" id="precio">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="cantidad" class="form-label">Cantidad</label>
+                                                                    <label for="cantidad" class="form-label">Cantidad *</label>
                                                                     <input value="<?php echo $infoInventario["cantidad"] ?>" required type="number" class="form-control" name="cantidad" id="cantidad">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="fecha" class="form-label">Fecha</label>
+                                                                    <label for="fecha" class="form-label">Fecha *</label>
                                                                     <input value="<?php echo $infoInventario["fecha"] ?>" required type="date" class="form-control" name="fecha" id="fecha">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="unidadMedida" class="form-label">Unidad de Medida</label>
+                                                                    <label for="unidadMedida" class="form-label">Unidad de Medida *</label>
                                                                     <input value="<?php echo $infoInventario["unidad_medida"] ?>" required type="text" class="form-control" name="unidadMedida" id="unidadMedida">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="stockMaximo" class="form-label">Stock Máximo</label>
+                                                                    <label for="stockMaximo" class="form-label">Stock Máximo *</label>
                                                                     <input value="<?php echo $infoInventario["stock_maximo"] ?>" required type="number" class="form-control" name="stockMaximo" id="stockMaximo">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="stockMinimo" class="form-label">Stock Mínimo</label>
+                                                                    <label for="stockMinimo" class="form-label">Stock Mínimo *</label>
                                                                     <input value="<?php echo $infoInventario["stock_minimo"] ?>" required type="number" class="form-control" name="stockMinimo" id="stockMinimo">
                                                                 </div>
                                                                 <div class="mb-3">
@@ -119,13 +119,14 @@ if (!$infoInventario) {
                                                                     <input value="<?php echo $infoInventario["observaciones"] ?>" required type="text" class="form-control" name="observaciones" id="observaciones">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="idAlmacen" class="form-label">Id Almacén</label>
+                                                                    <label for="idAlmacen" class="form-label">Id Almacén *</label>
                                                                     <input value="<?php echo $infoInventario["idalmacen"] ?>" required type="number" class="form-control" name="idAlmacen" id="idAlmacen">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="idRegistro" class="form-label">Id Registro</label>
+                                                                    <label for="idRegistro" class="form-label">Id Registro *</label>
                                                                     <input value="<?php echo $infoInventario["idregistro"] ?>" required type="number" class="form-control" name="idRegistro" id="idRegistro">
                                                                 </div>
+                                                                <small>Los campos con * son requeridos</small>
                                                                 <div class="mb3">
                                                                     <button class="btn btn-success">Guardar</button>
                                                                     <a class="btn btn-info" href="../loginUsuario/pagina_principal.php">Retornar</a>

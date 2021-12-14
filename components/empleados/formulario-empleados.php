@@ -54,45 +54,45 @@
                                                             <form class="main-form" action="registrar-empleados.php" method="POST">
 
                                                                 <div class="mb-3">
-                                                                    <label for="numDoc" class="form-label">Tipo Documento</label>
+                                                                    <label for="numDoc" class="form-label">Tipo Documento *</label>
                                                                     <input required type="text" class="form-control" name="typeDoc" id="typeDoc" placeholder="CC, TI, CE">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="numDoc" class="form-label">Número Documento</label>
+                                                                    <label for="numDoc" class="form-label">Número Documento *</label>
                                                                     <input required type="number" class="form-control" name="numDoc" id="numDoc" placeholder="Unicamente números">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="nombres" class="form-label">Nombres</label>
+                                                                    <label for="nombres" class="form-label">Nombres *</label>
                                                                     <input required type="text" class="form-control" name="nombres" id="nombres" placeholder="Nombres completos">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="apellidos" class="form-label">Apellidos</label>
+                                                                    <label for="apellidos" class="form-label">Apellidos *</label>
                                                                     <input required type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos completos">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="birthDate" class="form-label">Fecha Nacimiento</label>
+                                                                    <label for="birthDate" class="form-label">Fecha Nacimiento *</label>
                                                                     <input type="date" class="form-control" name="birthDate" id="birthDate" placeholder="Formato dd-mm-aaa">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label required for="genero" class="form-label">Género</label>
+                                                                    <label required for="genero" class="form-label">Género *</label>
                                                                     <input type="text" class="form-control" name="genero" id="genero">
                                                                 </div>
 
                                                                 <div class="mb-3">
-                                                                    <label for="ciudadResidencia" class="form-label">Ciudad de Residencia</label>
+                                                                    <label for="ciudadResidencia" class="form-label">Ciudad de Residencia *</label>
                                                                     <input required type="text" class="form-control" name="ciudadResidencia" id="ciudadResidencia">
                                                                 </div>
 
                                                                 <div class="mb-3">
                                                                     <label for="observaciones" class="form-label">Observaciones</label>
-                                                                    <textarea class="form-control" id="observaciones" name="observaciones" rows="3"></textarea>
+                                                                    <input required type="text" class="form-control" name="observaciones" id="observaciones">
                                                                 </div>
-
+                                                                <small>Los campos con * son requeridos</small>
                                                                 <div class="mb3">
                                                                     <button class="btn btn-success">Guardar</button>
                                                                     <a class="btn btn-info" href="../loginUsuario/principal.php">Retornar</a>

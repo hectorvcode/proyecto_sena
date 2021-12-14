@@ -75,17 +75,18 @@ if (!$infoUsuario) {
                                                                 <input type="hidden" name="id" id="id" value="<?php echo $id_usuario ?>">
 
                                                                 <div class="mb-3">
-                                                                    <label for="email" class="form-label">Email del usuario</label>
+                                                                    <label for="email" class="form-label">Email del usuario *</label>
                                                                     <input value="<?php echo $infoUsuario["correo"] ?>" required type="email" class="form-control" name="email" id="email" placeholder="nombre@ejemplo.com">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="passw" class="form-label">Contraseña</label>
+                                                                    <label for="passw" class="form-label">Contraseña *</label>
                                                                     <input value="<?php echo $infoUsuario["password"] ?>" required type="password" class="form-control" name="passw" id="passw">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="idEmpleado" class="form-label">Id Empleado</label>
+                                                                    <label for="idEmpleado" class="form-label">Id Empleado *</label>
                                                                     <input value="<?php echo $infoUsuario["idempleado"] ?>" required type="number" class="form-control" name="idEmpleado" id="idEmpleado" placeholder="Id Empleado (tabla)">
                                                                 </div>
+                                                                <small>Los campos con * son requeridos</small>
                                                                 <div class="mb3">
                                                                     <button class="btn btn-success">Guardar</button>
                                                                     <a class="btn btn-info" href="../loginUsuario/pagina_principal.php">Retornar</a>

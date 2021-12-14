@@ -43,11 +43,11 @@ if (isset($_SESSION['nombreUsuario'])) {
                         <form method="POST">
                             <fieldset>
                                 <div class="field">
-                                    <label class="form-label">Email Address</label>
+                                    <label class="form-label">Email Address *</label>
                                     <input type="email" class="form-control" name="correo" id="correo" placeholder="E-mail" />
                                 </div>
                                 <div class="field">
-                                    <label class="form-label">Password</label>
+                                    <label class="form-label">Password *</label>
                                     <input type="password" class="form-control" name="password" id="password" placeholder="Password" />
                                 </div>
                                 <div class="field">

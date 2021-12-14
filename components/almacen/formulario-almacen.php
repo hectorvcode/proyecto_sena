@@ -53,17 +53,18 @@
                                                         <div class="col-12 contenedor">
                                                             <form class="main-form" action="registrar-almacen.php" method="POST">                                                                
                                                                 <div class="mb-3">
-                                                                    <label for="nombreAlmacen" class="form-label">Nombre Almacén</label>
+                                                                    <label for="nombreAlmacen" class="form-label">Nombre Almacén *</label>
                                                                     <input type="text" class="form-control" name="nombreAlmacen" id="nombreAlmacen">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="ubicacion" class="form-label">Ubicación</label>
+                                                                    <label for="ubicacion" class="form-label">Ubicación *</label>
                                                                     <input type="text" class="form-control" name="ubicacion" id="ubicacion">
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label for="observaciones" class="form-label">Observaciones</label>
                                                                     <input required type="text" class="form-control" name="observaciones" id="observaciones">
                                                                 </div>
+                                                                <small>Los campos con * son requeridos</small>
                                                                 <div class="mb3">
                                                                     <button class="btn btn-success">Guardar</button>
                                                                     <a class="btn btn-info" href="../loginUsuario/pagina_principal.php">Retornar</a>

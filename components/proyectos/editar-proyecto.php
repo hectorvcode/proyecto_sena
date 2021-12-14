@@ -80,33 +80,34 @@ if (!$infoProyecto) {
                                                                 <input type="hidden" name="id" id="id" value="<?php echo $id_proyecto ?>">
 
                                                                 <div class="mb-3">
-                                                                    <label for="nombreProyecto" class="form-label">Nombre Proyecto</label>
+                                                                    <label for="nombreProyecto" class="form-label">Nombre Proyecto *</label>
                                                                     <input value="<?php echo $infoProyecto["nombre_proyecto"] ?>" type="text" class="form-control" name="nombreProyecto" id="nombreProyecto">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="ubicacion" class="form-label">Ubicación</label>
+                                                                    <label for="ubicacion" class="form-label">Ubicación *</label>
                                                                     <input value="<?php echo $infoProyecto["ubicacion"] ?>" type="text" class="form-control" name="ubicacion" id="ubicacion">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="fechaInicio" class="form-label">Fecha Inicio</label>
+                                                                    <label for="fechaInicio" class="form-label">Fecha Inicio *</label>
                                                                     <input value="<?php echo $infoProyecto["fecha_inicio"] ?>" type="date" class="form-control" name="fechaInicio" id="fechaInicio">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="fechaFin" class="form-label">Fecha Finalización</label>
+                                                                    <label for="fechaFin" class="form-label">Fecha Finalización *</label>
                                                                     <input value="<?php echo $infoProyecto["fecha_fin"] ?>" type="date" class="form-control" name="fechaFin" id="fechaFin">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="presupuesto" class="form-label">Presupuesto</label>
+                                                                    <label for="presupuesto" class="form-label">Presupuesto *</label>
                                                                     <input value="<?php echo $infoProyecto["presupuesto"] ?>" type="number" class="form-control" name="presupuesto" id="presupuesto">
                                                                 </div>
                                                                 <div class="mb-3">
-                                                                    <label for="kilometrajeProyecto" class="form-label">Kilometraje Proyecto</label>
+                                                                    <label for="kilometrajeProyecto" class="form-label">Kilometraje Proyecto *</label>
                                                                     <input value="<?php echo $infoProyecto["kilometraje_proyecto"] ?>" type="number" class="form-control" name="kilometrajeProyecto" id="kilometrajeProyecto">
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label for="observaciones" class="form-label">Observaciones</label>
                                                                     <input value="<?php echo $infoProyecto["observaciones"] ?>" type="text" class="form-control" name="observaciones" id="observaciones">
                                                                 </div>
+                                                                <small>Los campos con * son requeridos</small>
                                                                 <div class="mb3">
                                                                     <button class="btn btn-success">Guardar</button>
                                                                     <a class="btn btn-info" href="../loginUsuario/pagina_principal.php">Retornar</a>
